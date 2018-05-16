@@ -14,16 +14,16 @@ Keter integrates with remote testing automation based on Selenium Grid.
 
 **Local installation**
 
-Download Selenium Grid server jar:  
+Selenium Grid setup guidance:  
+https://github.com/SeleniumHQ/selenium/wiki/Grid2   
+
+1. Download Selenium Grid server jar:  
 http://selenium-release.storage.googleapis.com/3.7/selenium-server-standalone-3.7.1.jar 
 
-Selenium Grid setup guidance:  
-https://github.com/SeleniumHQ/selenium/wiki/Grid2  
-
-Start Selenium Grid Hub   
+2. Start Selenium Grid Hub   
 java -jar selenium-server-standalone-3.7.1.jar -role hub -port 4444  
 
-Start Selenium Grid Node  
+3. Start Selenium Grid Node  
 java -jar selenium-server-standalone-3.7.1.jar -role node -hub http://localhost:4444/grid/register/ -port 4444
 
 **Docker installation**
@@ -32,7 +32,7 @@ The below link is a step-by-step introduction to using the official Selenium Doc
 
 [How to get started selenium hub and node](https://github.com/SeleniumHQ/docker-selenium/wiki/Getting-Started-with-Hub-and-Nodes)
 
-### Install BPM Testing Asset Toolkit
+### Install Keter Toolkit
 
 1. Import the Keter_Toolkit - 8.6.0_v1.0.twx from toolkit folder into the proces center.
 2. Add this toolkit dependency for your Process App
@@ -43,7 +43,7 @@ The below link is a step-by-step introduction to using the official Selenium Doc
    ![][service]
    
 ### Plug-in
-You need to install this plug-in to record the UI.By now we only support chrome browser to record test case.
+You need to install this plug-in to record the UI.
 
 1. Download the recorder plug-in from Keter Home page.
 2. Open the chrome browser and input the **chrome://extensions/**
